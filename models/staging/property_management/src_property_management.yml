@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: property_management
+    database: raw
+    schema: property_management
+    freshness:
+      warn_after: { count: 24, period: hour }
+      error_after: { count: 48, period: hour }
+    loaded_at_field: uploaded_at
+
+    tables:
+      - name: bank_accounts
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: contact_infos
+        columns:
+          - name: id
+            tests: [unique, not_null]
