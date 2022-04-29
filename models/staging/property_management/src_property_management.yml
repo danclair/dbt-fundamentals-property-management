@@ -18,3 +18,48 @@ sources:
         columns:
           - name: id
             tests: [unique, not_null]
+      - name: email_delivery_statuses
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: emails
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: leases
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: owners
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: properties
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: property_owners
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: rental_applications
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: tenants
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: transactions
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: units
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+      - name: vendors
+        columns: 
+          - name: id
+            tests: [unique, not_null]
+

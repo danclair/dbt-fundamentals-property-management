@@ -6,5 +6,4 @@ with bank_accounts as (
         routing_number
     from {{ source('property_management', 'bank_accounts') }}
 )
-
 select * from bank_accounts
